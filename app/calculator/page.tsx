@@ -4,7 +4,6 @@ import React, { useState, useEffect } from "react";
 import { Navbar } from "@/components/ui/navbar";
 import { Footer } from "@/components/ui/footer";
 import { Reveal } from "@/components/ui/reveal";
-import { Slider } from "lucide-react"; // I'll use custom inputs for better UI
 import { BarChart3, TrendingDown, Sun, Calculator, ArrowRight, Mail } from "lucide-react";
 
 export default function SolarCalculator() {
