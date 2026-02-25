@@ -1,34 +1,53 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ☀️ Solaris - Premium Solar Energy Website
 
-## Getting Started
+A state-of-the-art Next.js 15 platform for the solar industry. Built for world-class performance, premium aesthetics, and search engine dominance.
 
-First, run the development server:
+## 🚀 Tech Stack
+- **Framework**: Next.js 15 (App Router)
+- **Styling**: Tailwind CSS v4 (CSS-First)
+- **Animations**: Framer Motion (Reveals) + GSAP ScrollTrigger (Pinned Timelines)
+- **Icons**: Lucide React
+- **Optimization**: React Compiler enabled
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🛠️ Getting Started
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. **Install Dependencies**:
+   ```bash
+   npm install
+   ```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+2. **Run Development Server**:
+   ```bash
+   npm run dev
+   ```
 
-## Learn More
+3. **Build for Production**:
+   ```bash
+   npm run build
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+## 📁 Project Structure
+- `/app`: App router pages and layouts.
+- `/components/ui`: Atomic UI components (Buttons, Navbar, Reveal).
+- `/components/sections`: Large page sections (Hero, HowItWorks).
+- `/lib`: Utility functions and SEO helpers.
+- `PERFORMANCE.md`: Performance optimization checklist.
+- `SEO.md`: Search engine optimization checklist.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📈 SEO & Marketing
+- **JSON-LD**: Structured data is pre-configured in `lib/seo`.
+- **Sitemap**: Automatically generated at `/sitemap.xml`.
+- **Metadata**: Fully dynamic metadata per route in `layout.tsx` and individual pages.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🎨 Design System
+- **Colors**: Solar Gold (`primary`), Tech Blue (`secondary`), Eco Green (`accent`).
+- **Typography**: `Outfit` for headings, `Inter` for body.
+- **Micro-animations**: Smooth hover transitions and scroll-based entry effects.
 
-## Deploy on Vercel
+## 📝 Content Management
+Currently, content is managed directly within the components for maximum performance. To migrate to a CMS (Sanity/Payload/Contentful), simply replace the data arrays in:
+- `app/products/page.tsx`
+- `app/projects/page.tsx`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+*Built with ❤️ for the sustainable future.*
